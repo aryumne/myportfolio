@@ -1,0 +1,121 @@
+h2 {
+    color: rgb(73, 26, 117);
+}
+/* Navbar */
+.navbar-brand {
+    font-family: viga;
+}
+.navbar-brand,
+.nav-link {
+    font-weight: 400;
+}
+.navbar-brand:hover,
+.nav-link:hover,
+.nav-pills .active {
+    font-weight: bold !important;
+    color: rgb(137, 23, 243) !important;
+    border-bottom: 3px solid rgb(137, 23, 243);
+    margin-top: -3px !important;
+    background-color: transparent !important;
+}
+nav.bg-dark {
+    margin-top: -130px;
+}
+nav.bg-dark.show {
+    margin-top: 0px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.4s;
+}
+
+/* end Navbar */
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("../img/bgImage.jpg");
+    background-size: cover;
+}
+
+.jumbotron::after {
+    position: absolute;
+    content: "";
+    height: 103%;
+    width: 100%;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.4)
+    );
+    top: 0;
+    left: 0;
+}
+.jumbotron .container {
+    z-index: 1;
+}
+.jumbotron .display-5 {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.jumbotron p {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(209, 205, 205, 0.8);
+}
+/* end Jumbotron */
+
+/* About */
+.sec-about .col h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+.sec-about p {
+    text-align: justify;
+    color: rgb(112, 111, 111);
+}
+/* end About */
+
+/* Services */
+.img-services {
+    background-image: url("../img/webservices.jpg");
+    background-size: cover;
+}
+.sec-services p {
+    color: rgb(112, 111, 111);
+}
+.sec-services-mobile {
+    background-color: blueviolet;
+}
+.sec-services-mobile h2 {
+    color: white;
+}
+/* end Services */
+
+/* Resume */
+.sec-resume .list-group-item {
+    background-color: transparent;
+    border: 0;
+}
+.sec-resume h4 {
+    color: rgb(73, 26, 117);
+}
+/* end Resume */
+
+/* Contact */
+.sec-contact {
+    background-color: #3c3c3c;
+}
+
+.sec-contact a {
+    text-decoration: none;
+    padding-top: 1px;
+}
+/* end Contact */
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+    .nav-link {
+        margin-left: 30px;
+    }
+}
